@@ -33,7 +33,7 @@ function Rewards() {
       
   return (
     <div className='background w-full h-full overflow-hidden no-scrollbar mt-15' >
-        <div className="ml-10 px-10 py-3 ">
+        <div className="ml-10 px-0 py-3 ">
             <img className="h-60 w-full" src={rewardbanner}/>  
         </div>
         <div className='w-full pl-10 h-85'>
@@ -46,7 +46,7 @@ function Rewards() {
                 </div>
             </div>
             
-            <div className='w-full h-85 px-10 flex flex-row '>
+            <div className='w-full h-85 px-0 flex flex-row '>
                 <div className='w-100 h-85 no-scrollbar'>
                   <RankCard rank="unranked" points="10000,00"/>
                 </div>
@@ -57,20 +57,20 @@ function Rewards() {
         </div>
 
         <div className='w-full h-85 pl-10'>
-            <div className='w-full h-5 pl-10 mb-2 mt-8 flex flex-row'>
+            <div className='w-full h-5 pl-0 mb-2 mt-8 flex flex-row'>
                 <h3 className='text-white'>Rewards Keys</h3>
                 <div className='ml-319 space-x-4'>
                    <button onClick={() => scroll("rewardKey","left")} className=" text-white text-lg ">&larr;</button>
                    <button onClick={() => scroll("rewardKey","right")} className=" text-white text-lg ">&rarr;</button>
                 </div>
             </div>
-            <div id="rewardKey"className='h-85 pl-10 flex flex-row overflow-x-auto no-scrollbar space-x-4'>
+            <div id="rewardKey"className='h-85 pl-0 flex flex-row overflow-x-auto no-scrollbar space-x-4'>
             {rewardKeyCards}
             </div>
         </div>
 
         <div className=' w-full h-85 ml-10'>
-            <div className='w-full h-5 pl-10 mb-2 mt-8 flex flex-row'>
+            <div className='w-full h-5 pl-0 mb-2 mt-8 flex flex-row'>
               <h3 className='text-white'>Rewards Calender</h3>
 
               <div className='ml-310 space-x-4'>
@@ -78,7 +78,7 @@ function Rewards() {
                 <button onClick={() => scroll("rewardCalender","right")} className=" text-white text-lg z-10">&rarr;</button>
               </div>
           </div>
-          <div id="rewardCalender" className=' h-85 pl-10 flex flex-row overflow-x-auto no-scrollbar space-x-4 '>
+          <div id="rewardCalender" className=' h-85  flex flex-row overflow-x-auto no-scrollbar space-x-4 '>
             {rewardCalenderCards}
           </div>
         </div>

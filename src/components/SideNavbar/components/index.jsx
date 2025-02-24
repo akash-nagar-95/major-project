@@ -8,7 +8,7 @@ import { bars } from '../../../assets/svg';
 const Sidebar = () => {
     const { isOpen, toggleSidebar } = useSidebar();
   return (
-    <div className='relative w-10 ' >
+    <div className='relative w-10 z-40' >
         <div className={`bg-transparent text-white pl-1 w-30 transition-all duration-300 ${isOpen ? "h-full" : "h-0"} fixed`} >
             <button onClick={toggleSidebar} className='bg-transparent mt-5 p-1 rounded-full mb-0' >
                 <img src={bars} alt="bar image" />
