@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+:root {
+    --color-primary : white;
+    --color-secondary : black;
+    --color-background : rgba(8, 9, 43, 1);
+    --color-card-background : rgba(72, 60, 111, 1);
+}
+
+/* utilities ka use karna,  otherwise inline styles ke andar :root ke elements ko use karna padega */
+.text-whitening{
+    color : var(--color-primary);
+}
+.text-blackning {
+    color : var(--color-secondary);
+}
+.background {
+    background-color : var(--color-background);
+}
+.card-background {
+    background-color: var(--color-card-background);
+}
+
+
+
+
+
+
+
+.no-scrollbar::-webkit-scrollbar {
+    display: none;   /* here, we are hiding the scrollbar whenever we scroll from left to right or from top to bottom */
+}
